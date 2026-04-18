@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Luxury Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+    
+    <div class="logo">🍽️ माँ भवानी</div>
+
+    
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    
+    <div class="nav-right">
+
+       
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+        
+        <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+
+        
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    </div>
+
+</nav>
+
+
+<header>
+    <h1>माँ भवानी रेस्टोरेंट एंड मिस्टान भंडार</h1>
+    <p>Premium taste for premium people</p>
+    <h1>Welcome to Our Restaurant</h1>
+</header>
+
+
+<section class="hero">
+    
+</section>
+
+
+<section class="menu" id="menu">
+    
+    <h2>Our Signature Dishes 🍔</h2>
+<br/>
+<br/>
+    <div class="menu-container">
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjXLE165kUBTbPnf9sIqIj9MJqw2b_Ie3Psg&s">
+            <h3>Sponge Rasgulla</h3>
+            <p class="price">₹260 / kg</p>
+            <button onclick="orderItem('Sponge')">Order Now</button>
+            <button onclick="addToCart('Sponge', 260)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://static.toiimg.com/thumb/53284860.cms?width=1200&height=900">
+            <h3>Kala Jamun</h3>
+            <p class="price">₹250 / kg</p>
+            <button onclick="orderItem('Kala Jamun')">Order Now</button>
+            <button onclick="addToCart('Kala Jamun', 250)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.kuchpakrahahai.in/wp-content/uploads/2017/10/Instant-peda.jpg" alt="">
+            <h3>Peda</h3>
+            <p class="price">₹400 / kg</p>
+            <button onclick="orderItem('Peda')">Order Now</button>
+            <button onclick="addToCart('Peda', 400)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5oXL-Qep-lwFIPsrVV5SsaIzGPvgFgdG0w&s" alt="">
+            <h3>Lai</h3>
+            <p class="price">₹450 / kg</p>
+            <button onclick="orderItem('Lai')">Order Now</button>
+            <button onclick="addToCart('Lai', 450)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://midwaytreatmangawan.com/wp-content/uploads/2023/06/Chilli-Paneer.jpg" alt="">
+            <h3>Paneer Chilli </h3>
+            <p class="price">₹180 Full Plate</p>
+            <button onclick="orderItem('Paneer Chilli')">Order Now</button>
+            <button onclick="addToCart('Paneer Chilli', 180)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.nehascookbook.com/wp-content/uploads/2020/07/Paneer-shaak-WS-500x500.jpg" alt="">
+            <h3>Paneer Masala</h3>
+            <p class="price">₹200 Full Plate</p>
+            <button onclick="orderItem('Paneer Masala')">Order Now</button>
+            <button onclick="addToCart('Paneer Masala', 200)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwlP7ovxUYJ_5aEbg65vQxy0AAaA3rO3xddg&s" alt="">
+            <h3>Manchurian </h3>
+            <p class="price">₹80 Full Plate</p>
+            <button onclick="orderItem('Manchurian')">Order Now</button>
+            <button onclick="addToCart('Manchurian', 80)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/w8dDtaN389M/maxresdefault.jpg" alt="">
+            <h3>Chaumin</h3>
+            <p class="price">₹40 Full Plate</p>
+            <button onclick="orderItem('Chaumin')">Order Now</button>
+            <button onclick="addToCart('Chaumin', 40)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgSc-deUkP-N519PyrV9k9w2yi3ceempqZQ&s" alt="">
+            <h3>Egg Rolls </h3>
+            <p class="price">₹40</p>
+            <button onclick="orderItem('Egg Rolls ')">Order Now</button>
+            <button onclick="addToCart('Egg Rolls ', 40)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzrV9Q2B0KLe2QvaGH98SvDArwLnQ4I4yrQ&s" alt="">
+            <h3>Chicken Masala</h3>
+            <p class="price">₹200 Full Plate</p>
+            <button onclick="orderItem('Chicken Masala')">Order Now</button>
+            <button onclick="addToCart('Chicken Masala', 200)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGELkTr6-q_Bx3M4sdihZ7WjCJPpKKbktCg&s" alt="">
+            <h3>Litti Chokha</h3>
+            <p class="price">₹40 Full Plate</p>
+            <button onclick="orderItem('Litti Chokha')">Order Now</button>
+            <button onclick="addToCart('Litti Chokha', 40)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh9cpshic0SlDlLJnDa5kEp9Udgf0dsbSkxg&s" alt="">
+            <h3>Tawa Naan</h3>
+            <p class="price">₹20</p>
+            <button onclick="orderItem('Tawa Naan')">Order Now</button>
+            <button onclick="addToCart('Tawa Naan', 20)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://ocakes.in/storage/app/public/images/item/item-642f5ad0783b8.jpg" alt="">
+            <h3>Cake</h3>
+            <p class="price">₹40 Full Plate</p>
+            <button onclick="orderItem('Cake')">Order Now</button>
+            <button onclick="addToCart('Cake', 40)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg" alt="">
+            <h3>Italian Pizza</h3>
+            <p class="price">₹499</p>
+            <button onclick="orderItem('Pizza')">Order Now</button>
+            <button onclick="addToCart('Pizza', 499)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDcH_MxdsTsK6KMVon-Ybfa2WiT-R70ZjWw&s" alt="">
+            <h3>Burger</h3>
+            <p class="price">₹30</p>
+            <button onclick="orderItem('Burger')">Order Now</button>
+            <button onclick="addToCart('Burger', 30)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://indiasweethouse.in/cdn/shop/files/MiniAlooSamosa_1bcec850-eaad-4122-89bd-1470ff0cf104.jpg?v=1719308765" alt="">
+            <h3>Samosa</h3>
+            <p class="price">₹10</p>
+            <button onclick="orderItem('Samosa')">Order Now</button>
+            <button onclick="addToCart('Samosa', 10)">Add to Cart</button>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="cart" id="cart">
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <input type="tel" id="customer-phone" placeholder="Enter your phone number for order history" style="width: 90%; padding: 10px; margin: 15px 0; border-radius: 8px; border: 1px solid #ccc;" required>
+
+    <button onclick="payWithRazorpay()">💳 Pay Now Razorpay</button>
+    <button onclick="placeOrder()">📦 Place Order (WhatsApp)</button>
+    <section class="orders">
+    <h2>📜 Order History</h2>
+    <ul id="order-history"></ul>
+</section>
+</section>
+
+
+<a href="tel:+918235915762" class="call-btn">📞 Call Now</a>
+
+
+<footer class="footer" id="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>📍 Address:</strong> Main Road (Darve Bhadaur), Patna, India</p>
+    <p><strong>📞 Phone:</strong> +91 8235915762</p>
+    <p><strong>🕒 Opening Hours:</strong> 10:00 AM - 09:00 PM</p>
+
+    <p>© 2026 माँ भवानी रेस्टोरेंट एंड मिस्टान भंडार</p>
+</footer>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
