@@ -72,7 +72,7 @@ function payWithRazorpay() {
 
         prefill: {
             name: "Customer",
-            contact: "8235915762"
+            contact: "97867554332"
         },
 
         theme: {
@@ -147,7 +147,7 @@ function placeOrder() {
 
     message += `Total: ₹${total}`;
 
-    const phone = "918235915762";
+    const phone = "91867876544";
     const url = `https://wa.me/${phone}?text=${message}`;
 
     window.open(url, "_blank");
